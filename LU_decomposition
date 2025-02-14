@@ -1,0 +1,25 @@
+
+import numpy as np
+from scipy.linalg import lu  # Corrected the import statement
+
+# Input matrix
+A = np.array([
+    [2, 3, 1],
+    [4, 7, 2],
+    [6, 8, 4]
+], dtype=int)
+
+# Perform LU decomposition
+P, L, U = lu(A)
+
+# Output the results
+print("Permutation Matrix P:")
+print(P)
+
+print("\nLower Triangular Matrix L:")
+print(L)
+
+print("\nUpper Triangular Matrix U:")
+print(U)
+
+
